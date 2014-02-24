@@ -55,8 +55,8 @@ contains(MEEGO_EDITION,harmattan){
 }
 
 symbian{
-    TARGET = tweetian_0xA00158E5
-    TARGET.UID3 = 0xA00158E5
+    TARGET = tweetian_0xA00158EE
+    TARGET.UID3 = 0xA00158EE
     TARGET.CAPABILITY += NetworkServices Location LocalServices ReadUserData WriteUserData
     TARGET.EPOCHEAPSIZE = 0x40000 0x4000000
 
@@ -64,7 +64,7 @@ symbian{
     vendorinfo += "%{\"Dickson\"}" ":\"Dickson\""
     my_deployment.pkg_prerules = vendorinfo
     DEPLOYMENT += my_deployment
-    DEPLOYMENT.display_name = Tweetian
+    DEPLOYMENT.display_name = Hweetian
     ICON = Tweetian.svg
     RESOURCES += qml-symbian.qrc
 

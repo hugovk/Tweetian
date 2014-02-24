@@ -42,7 +42,7 @@ PageStackWindow {
         visible: showStatusBar
         color: "white"
         font.pixelSize: constant.fontSizeMedium
-        text: "Tweetian"
+        text: "Hweetian"
     }
 
     ToolTip {
