@@ -58,6 +58,16 @@ Page {
                 else infoBanner.showText(qsTr("Failed to save image"))
             }
         }
+        ToolButtonWithTip {
+            iconSource: platformInverted ? "Image/save_inverse.svg" : "Image/save.svg"
+            toolTipText: qsTr("Save Image")
+            enabled: tweetImagePreview.status == Image.Ready
+            onClicked: {
+                var filePath = QMLUtils.saveImage(tweetImagePreview)
+                if (filePath) infoBanner.showText(qsTr("Image saved in %1").arg(filePath))
+                else infoBanner.showText(qsTr("Failed to save image"))
+            }
+        }
     }
 
     Flickable {

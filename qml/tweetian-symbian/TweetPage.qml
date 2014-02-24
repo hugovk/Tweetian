@@ -93,6 +93,11 @@ Page {
             toolTipText: qsTr("Menu")
             onClicked: tweetMenu.open()
         }
+        ToolButtonWithTip {
+            iconSource: "toolbar-menu"
+            toolTipText: qsTr("Menu")
+            onClicked: tweetMenu.open()
+        }
     }
 
     Menu {
